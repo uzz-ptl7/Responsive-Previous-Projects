@@ -1,0 +1,257 @@
+/* General Styling for the Web Page */
+
+body{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+
+header{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 0px;
+    background-color: #7E74F1;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+}
+
+/* Styling for the Home Section */
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.same-margin{
+    margin: auto;
+}
+
+.div-1{
+    width: 60%;
+    text-align: justify;
+    padding: 0px 100px 0px 30px;
+}
+
+.div-1 h1 span{
+    color: #7E74F1;
+}
+
+.div-1 p{
+    color: gray;
+    font-size: 14px;
+}
+
+.div-2{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-2 img{
+    border-radius: 15px;
+}
+
+/* Styling for Skills Section */
+
+#skills{
+    text-align: center;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.skill-card{
+    background-color: white;
+    color: black;
+    width: 30%;
+    margin: auto 15px;
+    border-radius: 6px;
+    padding: 100px 3px 30px 3px;
+}
+
+.skill-card h2{
+    font-weight: lighter;
+}
+
+.skill-card p{
+    color: gray;
+}
+
+/* Styling for Work Section */
+
+#projects{
+    text-align: center;
+}
+
+.work-container{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    height: 100vh;
+}
+
+.work-content{
+    border: 1px solid gray;
+    width: 20%;
+    margin: auto 30px;
+    border-radius: 5px;
+}
+
+.work-content img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.work-content p{
+    padding: 50px 20px 15px 12px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+/* Styling for Testimonials Section */
+
+#testimonials{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.test-container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.test-content{
+    width: 50%;
+    margin: auto;
+}
+
+.test-words{
+    text-align: justify;
+    padding: 0px 15px;
+    margin-left: 35px;
+}
+
+.test-words p{
+    color: gray;
+    padding: 5px 0px;
+}
+
+.test-words button{
+    border: none;
+    border-radius: 3px;
+    padding: 13px 23px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    background-color: #7E74F1;
+    cursor: pointer;
+}
+
+.test-img img{
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+        
+footer{
+    background-color: white;
+    color: black;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .navbar ul li a{
+        padding: 5px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        align-items: center;
+    }
+    .div-1{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .div-2{
+        width: 100vw;
+    }
+    .container img{
+        width: 70%;
+        height: auto;
+    }
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        align-items: center;
+    }
+
+    .work-container, .test-container{
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        align-items: center;
+    }
+   
+    .skill-card, .work-content{
+        width: 90%;
+        margin: 5px 0px;
+    }
+
+    .work-content img{
+        width: 100%;
+    }
+
+    .test-container img{
+        display: none;
+    }
+    .test-words{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* @media (min-width: 600px) and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    body{
+        margin: 0;
+        padding: 0;
+    } 
+} */
